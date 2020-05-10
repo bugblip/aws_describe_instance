@@ -4,25 +4,25 @@ This code will generate a CSV output file with details of EC2 instances in a par
 
 The output file will include the following details.
 
-    InstanceName
-    InstanceId
-    InstanceState
-    AvailabilityZone
-    ImageId
-    SubnetId
-    VpcId
-    SecurityGroups
-    Volume
-    RootDeviceName
-    PrivateIpAddress
-    PublicIpAddress
-    KeyName
-    IamInstanceProfileName
-    LaunchTime
-    Platform
-    NetworkInterfaceId
-    MacAddress
-    Tags
+- InstanceName
+- InstanceId
+- InstanceState
+- AvailabilityZone
+- ImageId
+- SubnetId
+- VpcId
+- SecurityGroups
+- Volume
+- RootDeviceName
+- PrivateIpAddress
+- PublicIpAddress
+- KeyName
+- IamInstanceProfileName
+- LaunchTime
+- Platform
+- NetworkInterfaceId
+- MacAddress
+- Tags
 
 ### Usage
 
