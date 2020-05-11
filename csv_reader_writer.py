@@ -29,7 +29,7 @@ def csv_writer(dataDict, volumeDict, tagDict, rowNum):
 
     #Writing to CSV file and formatting       
     with open(filename, 'a') as f:
-        if ( rowNum == 0 ):
+        if ( rowNum == 0 and dataDict.get("mic") == 0 ):
             print(f"Generating output file at - {outputFilePath}") 
             for key,value in dataDict.items():
                 f.write(f"{key},")
@@ -45,5 +45,7 @@ def csv_writer(dataDict, volumeDict, tagDict, rowNum):
                     f.write(f"{tdk} = {tdv};")
                 #Once All the details of the dict are written we need to move to another column
                 f.write(",")
+            elif ( key == "mic"):
+                pass
             else:
                 f.write(f"{value},")
