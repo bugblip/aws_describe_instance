@@ -26,7 +26,7 @@ if __name__ == '__main__':
     for i in range (0, len(regData)):
         rid = regData[i].get("RegionName")
         regions.append(rid)
-        print(f"{i+1}.\t{rid}")
+        print('{:02}'.format(i+1), f"{rid}".center(4))
     
     choice1 = int(input())
     if(choice1 >=1 and choice1 <= len(regions)):
