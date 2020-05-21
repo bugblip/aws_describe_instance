@@ -46,24 +46,24 @@ def single_instance_describe(regName,instID):
         InstanceName = "-"
     
     #Adding all the info to the data Dictionary
-    dataDict["InstanceName"] = InstanceName
-    dataDict["InstanceId"] = InstanceData.get("InstanceId","-")
-    dataDict["InstanceState"] = InstanceData['State']['Name']
-    dataDict["AvailabilityZone"] = InstanceData['Placement']['AvailabilityZone']
-    dataDict["ImageId"] = InstanceData.get("ImageId","-")
-    dataDict["SubnetId"] = InstanceData.get("SubnetId","-")
-    dataDict["VpcId"] = InstanceData.get("VpcId","-")
-    dataDict["SecurityGroups"] = " ".join(sgList)
-    dataDict["Volume"] = volumeDict
-    dataDict["RootDeviceName"] = InstanceData.get("RootDeviceName","-")
-    dataDict["PrivateIpAddress"] = InstanceData.get("PrivateIpAddress","-")
-    dataDict["PublicIpAddress"] = InstanceData.get("PublicIpAddress","-")
-    dataDict["KeyName"] = InstanceData.get("KeyName","-")
+    dataDict["InstanceName"]        = InstanceName
+    dataDict["InstanceId"]          = InstanceData.get("InstanceId","-")
+    dataDict["InstanceState"]       = InstanceData['State']['Name']
+    dataDict["AvailabilityZone"]    = InstanceData['Placement']['AvailabilityZone']
+    dataDict["ImageId"]             = InstanceData.get("ImageId","-")
+    dataDict["SubnetId"]            = InstanceData.get("SubnetId","-")
+    dataDict["VpcId"]               = InstanceData.get("VpcId","-")
+    dataDict["SecurityGroups"]      = " ".join(sgList)
+    dataDict["Volume"]              = volumeDict
+    dataDict["RootDeviceName"]      = InstanceData.get("RootDeviceName","-")
+    dataDict["PrivateIpAddress"]    = InstanceData.get("PrivateIpAddress","-")
+    dataDict["PublicIpAddress"]     = InstanceData.get("PublicIpAddress","-")
+    dataDict["KeyName"]             = InstanceData.get("KeyName","-")
     dataDict["IamInstanceProfileName"] = IamInstanceProfileName
-    dataDict["LaunchTime"] = str(InstanceData['LaunchTime'])
-    dataDict["Platform"] = InstanceData.get("Platform","-")
-    dataDict["NetworkInterfaceId"] = InstanceData.get("NetworkInterfaceId","-")
-    dataDict["MacAddress"] = InstanceData.get("MacAddress","-")
-    dataDict["Tags"] = tagDict
+    dataDict["LaunchTime"]          = str(InstanceData['LaunchTime'])
+    dataDict["Platform"]            = InstanceData.get("Platform","-")
+    dataDict["NetworkInterfaceId"]  = InstanceData.get("NetworkInterfaceId","-")
+    dataDict["MacAddress"]          = InstanceData.get("MacAddress","-")
+    dataDict["Tags"]                = tagDict
     
     return (dataDict, volumeDict, tagDict)
