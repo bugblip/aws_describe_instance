@@ -29,8 +29,8 @@ The output file will include the following details.
 Run the main file using `python main.py` . The first input will ask for the AWS region where the EC2 Describe Instance API  will be called.
 
 After that, the code will give the user 2 options,
-> 1. Details of all EC2 Instance in us-east-1
-> 2. Details of specific EC2 instance in us-east-1 from an input CSV file containing instance id(s)
+> 1. Details of all EC2 Instance in {region}
+> 2. Details of specific EC2 instance in {region} from an input CSV file containing instance id(s)
 
 - For the 1st option, no extra input is required.
 - For the 2nd option, the path of an input CSV file containing instance ids is required. (for ex, /home/ec2-user/environment/temp/samplefile.csv)
